@@ -31,7 +31,7 @@ export default function Sidebar({ activeTab, setActiveTab, isMobileOpen, setIsMo
               <img src="/logo.png" alt="Logo ULIS" className="h-full w-full object-contain" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-white leading-tight">Nguyễn Thị Minh Anh</h2>
+              <h2 className="text-xl font-bold text-white leading-tight">Nguyễn Thị Quỳnh Chi</h2>
               <span className="text-xs text-blue-300 font-medium">Ngôn ngữ và Văn hóa Anh</span>
               <span className="block text-[11px] text-slate-400 mt-0.5">ULIS - VNU</span>
             </div>

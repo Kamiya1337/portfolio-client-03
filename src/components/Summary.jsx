@@ -40,7 +40,7 @@ Việc làm portfolio bằng web cũng giúp em luyện thêm kỹ năng trình 
       <article data-reveal className="reveal outcome-glow rounded-3xl bg-academic-blush p-32 text-center text-white md:p-10">
         <h3 className="text-xl font-extrabold text-black">Cam kết Liêm chính Học thuật</h3>
         <p className="mx-auto mt-4 max-w-3xl whitespace-pre-line text-sm italic leading-7 text-black/85">
-          {`Em, Nguyễn Thị Minh Anh, cam kết các báo cáo và nội dung trong portfolio này phản ánh quá trình học tập và thực hành của bản thân. Em có sử dụng AI như một công cụ hỗ trợ, chủ yếu để gợi ý cách trình bày, sửa code và kiểm tra nội dung.
+          {`Em, Nguyễn Thị Quỳnh Chi, cam kết các báo cáo và nội dung trong portfolio này phản ánh quá trình học tập và thực hành của bản thân. Em có sử dụng AI như một công cụ hỗ trợ, chủ yếu để gợi ý cách trình bày, sửa code và kiểm tra nội dung.
 
 AI chỉ nên hỗ trợ, không thể thay thế hoàn toàn việc học. Em không tạo minh chứng giả, không ghi sản phẩm không có thật và không cố tình trình bày sai quá trình làm bài của mình!
 

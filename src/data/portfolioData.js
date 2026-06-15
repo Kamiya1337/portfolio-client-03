@@ -2,11 +2,11 @@ import { FolderTree, Search, MessageSquare, Users, PenTool, ShieldCheck, Languag
 
 export const portfolioData = {
   student: {
-    name: "Nguyễn Thị Minh Anh",
-    id: "K70",
+    name: "Nguyễn Thị Quỳnh Chi",
+    id: "K59",
     major: "Ngôn ngữ và Văn hóa Anh",
     university: "Trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội (ULIS - VNU)",
-    bio: "Portfolio học tập ghi lại quá trình ứng dụng công nghệ số và AI trong việc tổ chức tài liệu, tìm kiếm thông tin, trình bày sản phẩm học thuật và khám phá văn hóa Hàn Quốc.",
+    bio: "Portfolio học tập ghi lại quá trình ứng dụng công nghệ số và AI trong việc tổ chức tài liệu, tìm kiếm thông tin, trình bày sản phẩm học thuật và khám phá văn hóa Anh.",
     skills: ["English Language", "English Culture", "Digital Literacy", "AI-assisted Learning", "Academic Research", "Intercultural Communication"]
   },
   overview: [

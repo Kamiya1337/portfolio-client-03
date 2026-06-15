@@ -20,12 +20,13 @@ export default function HomeTab() {
           <p className="mt-8 max-w-3xl text-base leading-8 text-academic-muted md:text-lg">{student.bio}</p>
         </div>
 
-        <div className="mt-12 grid gap-6 border-t border-academic-border pt-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 border-t border-academic-border pt-8 sm:grid-cols-2 lg:grid-cols-5">
           {[
             ['Trường', 'ULIS - VNU'],
             ['Ngành', 'Ngôn ngữ và Văn hóa Anh'],
             ['Học phần', 'Công nghệ số & Ứng dụng AI'],
             ['Sinh viên', student.name],
+            ['Mã sinh viên', "2502"],
           ].map(([label, value]) => (
             <div key={label}>
               <span className="section-kicker">{label}</span>
@@ -134,7 +135,7 @@ export default function HomeTab() {
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {[
-            ['Profile', 'Trọng tâm học tập', 'Ngôn ngữ Hàn Quốc, văn hóa Hàn Quốc và năng lực giao tiếp trong môi trường học thuật hiện đại.'],
+            ['Profile', 'Trọng tâm học tập', 'Ngôn ngữ Anh, văn hóa Anh và năng lực giao tiếp trong môi trường học thuật hiện đại.'],
             ['Objective', 'Mục tiêu học phần', 'Thành thạo công cụ số, biết đánh giá thông tin và sử dụng AI như một trợ lý học tập có trách nhiệm.'],
             ['Purpose', 'Lý do xây dựng portfolio', 'Hệ thống hóa sản phẩm, minh chứng tiến bộ và nhìn lại hành trình phát triển kỹ năng.'],
             ['Skills', 'Kỹ năng mũi nhọn', student.skills.join(' · ')],
