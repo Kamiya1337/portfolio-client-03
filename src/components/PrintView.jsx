@@ -19,7 +19,7 @@ export default function PrintView() {
         </div>
         <button
           onClick={handlePrint}
-          className="flex items-center gap-2 bg-academic-blue hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-bold shadow-md transition-all text-sm"
+          className="flex items-center gap-2 bg-academic-blue hover:bg-academic-strong text-white px-5 py-2.5 rounded-lg font-bold shadow-md transition-all text-sm"
         >
           <Printer size={18} />
           In / Lưu PDF (Ctrl + P)
@@ -152,7 +152,7 @@ export default function PrintView() {
                     <td className="p-3 font-bold border-r border-slate-200 bg-slate-50">{item.criteria}</td>
                     <td className="p-3 border-r border-slate-200 text-justify">{item.excellent}</td>
                     <td className="p-3 border-r border-slate-200 font-medium text-blue-700">{item.status}</td>
-                    <td className="p-3 italic text-rose-600">{item.action}</td>
+                    <td className="p-3 italic text-academic-strong">{item.action}</td>
                   </tr>
                 ))}
               </tbody>

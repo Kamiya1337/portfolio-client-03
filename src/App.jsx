@@ -45,7 +45,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => setShowPrintView(false)}
-          className="no-print fixed right-5 top-5 z-[70] inline-flex items-center gap-2 rounded-full border border-academic-border bg-white px-4 py-2 text-sm font-bold text-academic-ink shadow-soft transition hover:border-academic-rose hover:text-academic-deep-rose"
+          className="no-print fixed right-5 top-5 z-[70] inline-flex items-center gap-2 rounded-full border border-academic-border bg-white px-4 py-2 text-sm font-bold text-academic-ink shadow-soft transition hover:border-academic-accent hover:text-academic-strong"
         >
           <X size={17} />
           Quay lại portfolio
@@ -56,7 +56,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-white text-academic-ink">
+    <div className="min-h-screen overflow-x-hidden bg-academic-background text-academic-ink">
       <header className="sticky top-0 z-50 border-b border-academic-border/80 bg-academic-background/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-3 py-3 sm:flex-nowrap sm:gap-4 sm:px-5 md:px-10">
           <a href="#top" className="flex min-w-0 items-center gap-3" aria-label="Về đầu trang">
@@ -64,7 +64,7 @@ export default function App() {
               <img src="/logo.png" alt="Logo ULIS" className="h-full w-full object-contain" />
             </span>
             <span className="hidden min-w-0 sm:block">
-              <span className="block text-[10px] font-extrabold uppercase tracking-[0.18em] text-academic-deep-rose">
+              <span className="block text-[10px] font-extrabold uppercase tracking-[0.18em] text-academic-strong">
                 English Language Portfolio
               </span>
               <span className="block truncate text-xs text-academic-muted">Công nghệ số & AI · ULIS - VNU</span>
@@ -80,7 +80,7 @@ export default function App() {
             <button
               type="button"
               onClick={() => setShowPrintView(true)}
-              className="soft-pink-glow inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-academic-deep-rose text-xs font-bold text-white transition hover:bg-academic-rose focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academic-deep-rose md:h-auto md:w-auto md:gap-2 md:px-4 md:py-2 md:text-sm"
+              className="soft-blue-glow inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-academic-strong text-xs font-bold text-white transition hover:bg-academic-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academic-strong md:h-auto md:w-auto md:gap-2 md:px-4 md:py-2 md:text-sm"
             >
               <Printer size={16} />
               <span className="hidden md:inline">Bản in / PDF</span>
@@ -106,7 +106,7 @@ export default function App() {
           <p className="text-lg font-bold text-academic-ink">{student.name}</p>
           <p className="text-sm text-academic-muted">Trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội</p>
           <div className="flex items-center gap-2 text-xs text-academic-muted">
-            <BookOpenText size={14} className="text-academic-rose" />
+            <BookOpenText size={14} className="text-academic-accent" />
             <span>Ngôn ngữ và Văn hóa Anh · ULIS - VNU</span>
           </div>
           <p className="mt-5 border-t border-academic-border/60 pt-5 text-xs text-academic-muted">

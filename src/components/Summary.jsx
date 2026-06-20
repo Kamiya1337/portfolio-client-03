@@ -10,7 +10,7 @@ export default function Summary() {
 
       <article data-reveal className="reveal soft-card hover-lift relative overflow-hidden rounded-3xl bg-white p-7 md:p-10">
         <Quote className="absolute right-7 top-2 text-academic-blush" size={86} />
-        <h3 className="relative text-xl font-extrabold text-academic-deep-rose">Kiến thức & Kỹ năng đã đạt được</h3>
+        <h3 className="relative text-xl font-extrabold text-academic-strong">Kiến thức & Kỹ năng đã đạt được</h3>
         <p className="relative mt-5 whitespace-pre-line text-justify leading-8 text-academic-muted">
           {`"Ban đầu em nghĩ portfolio chỉ là gom các bài đã làm rồi đưa lên một trang web. Nhưng khi bắt tay vào làm, em mới thấy nếu chỉ đưa file lên thì sản phẩm sẽ khá rời rạc và không thể hiện được quá trình học.
 

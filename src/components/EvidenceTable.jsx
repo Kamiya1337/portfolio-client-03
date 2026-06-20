@@ -55,7 +55,7 @@ export default function EvidenceTable() {
       );
     }
     return (
-      <span className="inline-flex items-center gap-1 px-2 py-1 bg-rose-50 text-rose-600 text-xs font-bold rounded border border-rose-200">
+      <span className="inline-flex items-center gap-1 px-2 py-1 bg-academic-ivory text-academic-strong text-xs font-bold rounded border border-academic-border">
         <XCircle size={14}/> Thiếu MC
       </span>
     );
@@ -77,7 +77,7 @@ export default function EvidenceTable() {
                 <a href={previewData.url} target="_blank" rel="noreferrer" className="text-sm text-blue-600 hover:underline font-medium">
                   Mở thẻ mới
                 </a>
-                <button onClick={closePreview} className="p-1.5 bg-slate-200 hover:bg-rose-500 hover:text-white text-slate-700 rounded-lg transition-colors">
+                <button onClick={closePreview} className="p-1.5 bg-slate-200 hover:bg-academic-strong hover:text-white text-slate-700 rounded-lg transition-colors">
                   <X size={20} />
                 </button>
               </div>

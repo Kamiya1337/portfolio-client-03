@@ -7,7 +7,7 @@ export default function HomeTab() {
 
   return (
     <div className="space-y-24 lg:space-y-32">
-      <section data-reveal className="reveal soft-card soft-pink-glow rounded-3xl bg-white p-7 md:p-10 lg:p-14">
+      <section data-reveal className="reveal soft-card soft-blue-glow rounded-3xl bg-white p-7 md:p-10 lg:p-14">
         <div className="max-w-4xl">
           <span className="section-kicker">Portfolio / Digital & AI Learning</span>
           <h1 className="mt-5 text-3xl font-extrabold leading-[1.08] tracking-tight text-academic-ink sm:text-4xl md:text-6xl">
@@ -45,15 +45,15 @@ export default function HomeTab() {
             <div>
               <span className="section-kicker">Student profile</span>
               <h2 className="mt-5 text-3xl font-extrabold text-academic-ink">{student.name}</h2>
-              <figure className="mx-auto mt-5 w-full max-w-[300px] rounded-2xl border border-academic-border bg-white p-3 shadow-[0_10px_24px_rgba(236,72,153,0.14)]">
+              <figure className="mx-auto mt-5 w-full max-w-[300px] rounded-2xl border border-academic-border bg-white p-3 shadow-[0_10px_24px_rgba(126,200,227,0.18)]">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-academic-ivory">
                   <img
                     src={avatarImage}
                     alt={`Ảnh chân dung ${student.name}`}
                     className="h-full w-full object-cover object-[58%_center]"
                   />
-                  <figcaption className="absolute bottom-3 left-3 rounded-md bg-white/95 px-3 py-2 text-[11px] font-bold text-academic-rose shadow-sm backdrop-blur-sm">
-                    Minh Anh
+                  <figcaption className="absolute bottom-3 left-3 rounded-md bg-white/95 px-3 py-2 text-[11px] font-bold text-academic-strong shadow-sm backdrop-blur-sm">
+                    Quỳnh Chi
                   </figcaption>
                 </div>
               </figure>
@@ -72,7 +72,7 @@ export default function HomeTab() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:col-span-7">
           <article data-reveal className="reveal soft-card hover-lift rounded-2xl bg-white p-7">
-            <Languages className="text-academic-deep-rose" size={25} />
+            <Languages className="text-academic-strong" size={25} />
             <span className="section-kicker mt-6 block">Global learning</span>
             <h3 className="mt-2 text-xl font-bold">Ngôn ngữ và Văn hóa Anh</h3>
             <p className="mt-3 text-sm leading-6 text-academic-muted">
@@ -80,7 +80,7 @@ export default function HomeTab() {
             </p>
           </article>
           <article data-reveal className="reveal soft-card hover-lift rounded-2xl bg-white p-7">
-            <Sparkles className="text-academic-deep-rose" size={25} />
+            <Sparkles className="text-academic-strong" size={25} />
             <span className="section-kicker mt-6 block">Digital learning</span>
             <h3 className="mt-2 text-xl font-bold">Công nghệ số & AI</h3>
             <p className="mt-3 text-sm leading-6 text-academic-muted">
@@ -111,10 +111,10 @@ export default function HomeTab() {
           {overview.map((item, index) => {
             const Icon = item.icon;
             return (
-              <article data-reveal key={item.id} className="reveal hover-lift group flex items-center gap-5 rounded-xl border border-academic-border bg-white px-5 py-4 transition hover:border-academic-rose hover:bg-academic-blush">
-                <span className="w-8 shrink-0 text-sm font-extrabold text-academic-deep-rose">{String(index + 1).padStart(2, '0')}</span>
+              <article data-reveal key={item.id} className="reveal hover-lift group flex items-center gap-5 rounded-xl border border-academic-border bg-white px-5 py-4 transition hover:border-academic-accent hover:bg-academic-blush">
+                <span className="w-8 shrink-0 text-sm font-extrabold text-academic-strong">{String(index + 1).padStart(2, '0')}</span>
                 <span className="h-8 w-px bg-academic-border" />
-                <Icon size={20} className="shrink-0 text-academic-rose" />
+                <Icon size={20} className="shrink-0 text-academic-accent" />
                 <div className="min-w-0 md:flex md:flex-1 md:items-center md:justify-between md:gap-6">
                   <h3 className="font-bold text-academic-ink">{item.title}</h3>
                   <p className="mt-1 text-sm text-academic-muted md:mt-0 md:text-right">{item.desc}</p>
