@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
-import { BookOpenText, Printer, X } from 'lucide-react';
+import { BookOpenText, X } from 'lucide-react';
 import HomeTab from './components/HomeTab';
 import ProjectsTab from './components/ProjectsTab';
 import RubricTable from './components/RubricTable';
 import Summary from './components/Summary';
-import PrintView from './components/PrintView';
 import { portfolioData } from './data/portfolioData';
 
 export default function App() {
-  const [showPrintView, setShowPrintView] = useState(false);
   const { student } = portfolioData;
 
   useEffect(() => {
@@ -39,22 +37,6 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
-  if (showPrintView) {
-    return (
-      <div className="min-h-screen bg-white">
-        <button
-          type="button"
-          onClick={() => setShowPrintView(false)}
-          className="no-print fixed right-5 top-5 z-[70] inline-flex items-center gap-2 rounded-full border border-academic-border bg-white px-4 py-2 text-sm font-bold text-academic-ink shadow-soft transition hover:border-academic-accent hover:text-academic-strong"
-        >
-          <X size={17} />
-          Quay lại portfolio
-        </button>
-        <PrintView />
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen overflow-x-hidden bg-academic-background text-academic-ink">
       <header className="sticky top-0 z-50 border-b border-academic-border/80 bg-academic-background/95 backdrop-blur-md">
@@ -77,14 +59,6 @@ export default function App() {
               <a className="nav-link" href="#bai-tap">Bài tập</a>
               <a className="nav-link" href="#tong-ket">Tổng kết</a>
             </nav>
-            <button
-              type="button"
-              onClick={() => setShowPrintView(true)}
-              className="soft-blue-glow inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-academic-strong text-xs font-bold text-white transition hover:bg-academic-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-academic-strong md:h-auto md:w-auto md:gap-2 md:px-4 md:py-2 md:text-sm"
-            >
-              <Printer size={16} />
-              <span className="hidden md:inline">Bản in / PDF</span>
-            </button>
           </div>
         </div>
       </header>
